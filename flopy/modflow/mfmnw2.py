@@ -545,9 +545,11 @@ class Mnw(object):
         if self.nnodes > 0:
             def _getloc(n):
                 """Output for dataset 2d1."""
-                return indent+'{:.0f} {:.0f} {:.0f}'.format(self.k[n] +1,
-                                                     self.i[n] +1,
-                                                     self.j[n] +1)
+                return indent+'{:.0f} {:.0f} {:.0f}'.format(self.k +1,
+                                                     self.i +1,
+                                                     self.j +1)
+                
+
         elif self.nnodes < 0:
             def _getloc(n):
                 """Output for dataset 2d2."""
