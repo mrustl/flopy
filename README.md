@@ -1,10 +1,9 @@
 
 <img src="https://raw.githubusercontent.com/modflowpy/flopy/master/examples/images/flopy3.png" alt="flopy3" style="width:50;height:20">
 
-### Version 3.2.5
-[![Build Status](https://travis-ci.org/modflowpy/flopy.svg?branch=master)](https://travis-ci.org/modflowpy/flopy)
-[![PyPI Version](https://img.shields.io/pypi/v/flopy.png)](https://pypi.python.org/pypi/flopy)
-[![PyPI Downloads](https://img.shields.io/pypi/dm/flopy.png)](https://pypi.python.org/pypi/flopy)
+### Version 3.2.5 (with KWB modifications)
+[![Build Status](https://travis-ci.org/mrustl/flopy.svg?branch=kwb)](https://travis-ci.org/mrustl/flopy)
+
 
 
 Introduction
@@ -48,41 +47,30 @@ FloPy requires **Python** 2.7 or **Python** 3.3 (or higher)
 FloPy requires **NumPy** 1.9 (or higher) and **matplotlib** 1.4 (or higher). The mapping and cross-section capabilities in the `flopy.plot` submodule and shapefile export capabilities (`to_shapefile()`) require **Pyshp** 1.2 (or higher). The NetCDF export capabilities in the `flopy.export` submodule require **python-dateutil** 2.4 (or higher), **netcdf4** 1.1 (or higher), and **pyproj** 1.9 (or higher). Other NetCDF dependencies are detailed on the [UniData](http://unidata.github.io/netcdf4-python/) website. The `get_dataframes` method in the `ListBudget` class in the `flopy.utils` submodule require **pandas** 0.15 (or higher).
 
 
-**For base Python distributions:**
-
-To install FloPy type:
-
-    pip install flopy
-
-To update FloPy type:
-
-    pip install flopy --upgrade
-
-To uninstall FloPy type:
-
-    pip uninstall flopy
-
 **Installing from the git repository:**
 
-***Current Version of FloPy:***
+***Current version of FloPy:***
 
-To install the current version of FloPy from the git repository type:
+For base Python distributions to install FloPy type:
 
-    pip install https://github.com/modflowpy/flopy/zipball/master
-    
-To update your version of FloPy with the current version from the git repository type:
+For Phython 2.7:
 
-    pip install https://github.com/modflowpy/flopy/zipball/master --upgrade
+    pip install https://github.com/mrustl/flopy/archive/3.2.5_kwb.zip
+
+For Python 3.3 (or higher):
+
+    pip3 install https://github.com/mrustl/flopy/archive/3.2.5_kwb.zip
+
 
 ***Development version of FloPy:***
 
 To install the bleeding edge version of FloPy from the git repository type:
 
-    pip install https://github.com/modflowpy/flopy/zipball/develop
+    pip install https://github.com/mrustl/flopy/zipball/kwb
     
 To update your version of FloPy with the bleeding edge code from the git repository type:
 
-    pip install https://github.com/modflowpy/flopy/zipball/develop --upgrade
+    pip install https://github.com/mrustl/flopy/zipball/kwb --upgrade
 
 
 FloPy Supported Packages
